@@ -13,8 +13,6 @@ const copyButton = document.getElementById("copy");
 
 copyButton.addEventListener("click", copyPassword);
 
-document.addEventListener("DOMContentLoaded", generate);
-
 generateButton.addEventListener("click", generate);
 
 length.addEventListener("change", generate);
@@ -59,3 +57,5 @@ function copyPassword() {
     alert("Password copied to clipboard");
   });
 }
+
+generate();
